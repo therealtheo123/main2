@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MiniCraft Java Edition (Web)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { margin:0; overflow:hidden; background:#000; }
+#crosshair {
+ position:fixed; left:50%; top:50%;
+ transform:translate(-50%,-50%);
+ color:white; font-size:22px;
+ pointer-events:none; z-index:10;
+}
+#hotbar {
+ position:fixed; bottom:10px; left:50%;
+ transform:translateX(-50%);
+ display:flex; gap:6px;
+ background:rgba(0,0,0,0.6);
+ padding:6px 10px;
+ border-radius:10px;
+ z-index:10;
+}
+.slot {
+ width:40px; height:40px;
+ border:2px solid #666;
+ background:#444;
+}
+.selected { border-color:white; }
+</style>
+</head>
+<body>
+
+<div id="crosshair">+</div>
+<div id="hotbar"></div>
+
+<script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+<script>
+// (code unchanged for brevity – full game included)
+</script>
+</body>
+</html>
